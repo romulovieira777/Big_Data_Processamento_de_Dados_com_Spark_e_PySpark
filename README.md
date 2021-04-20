@@ -1,1 +1,11 @@
-# Big_Data_Processamento_de_Dados_com_Spark_e_PySpark
+# Big Data - Processamento de Dados com Spark e PySpark
+### Curso Big Data - Processamento de Dados com Spark e PySpark na Udemy
+#### :computer: Temas abordados durante o curso foram :rocket:
+- Seção 01 - Princípios de Big Data
+- Seção 02 - Infraestrutura - Montando um Ambiente de Big Data
+- Seção 03 - Configuração do Apache Spark no Windows 10
+- Seção 04 - Princípios de Desenvolvimento em Spark
+- Seção 05 - Arquitetura Spark
+- Seção 06 - Utilizando o Apache Spark
+
+Link para o curso: [Udemy](https://www.udemy.com/course/big-data-com-apache-spark-e-pyspark/)
