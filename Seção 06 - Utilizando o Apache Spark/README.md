@@ -165,16 +165,225 @@ glom <vairável>
 print(rdd4.glom().collect())
 ~~~
 
+**O que faz a função import:**
+
+É uma linha com o caminho completo para o arquivo python que contem o módulo que se deseja importar.
+
+**Sintaxe**
+
+~~~py
+import <biblioteca>
+~~~
+
+**Exemplo**
+
+~~~py
+import re
+~~~
+
+**O que faz a função in:**
+
+Verifica se o operando a sua esquerda, está contido na lista a sua direita.
+
+**Sintaxe**
+
+~~~py
+ in (<variável>)
+~~~
+
+**Exemplo**
+
+~~~py
+2 and 3 in range(1,6)
+~~~
+
+**O que faz a função intersection:**
+
+Retorna os elementos que aparecem em ambos conjuntos.
+
+**Sintaxe**
+
+~~~py
+ intersection (<variável>)
+~~~
+
+**Exemplo**
+
+~~~py
+dados1 = sc.parallelize(['A', 'B', 'C', 'D', 'E'])
+dados2 = sc.parallelize(['A', 'E', 'I', 'O', 'U'])
+
+result = dados1.intersection(dados2)
+~~~
+
+**O que faz a função lambda:**
+
+Permite escrever funções anônimas/sem-nome usando apenas uma linha de código.
+
+**Sintaxe**
+
+~~~py
+lambda(<condição>):
+~~~
+
+**Exemplo**
+
+~~~py
+impar = lambda x: x % 2 > 0
+~~~
+
+**O que faz a função parallelize:**
+
+Permite executar várias funções ao mesmo tempo. Ela pode ser muito útil para tornar um código com muitos ciclos mais rápido, além de permitir mensagens durante scripts com um longo tempo de execução.
+
+**Sintaxe**
+
+~~~py
+parallelize(<variável>)
+~~~
+
+**Exemplo**
+
+~~~py
+rddList = sc.parallelize(range(1000000), 10)
+~~~
+
+**O que faz a função print:**
+
+Imprimir um argumento passado na tela.
+
+**Sintaxe**
+
+~~~py
+print(<variável>)
+~~~
+
+**Exemplo**
+
+~~~py
+print('Olá, Mundo!')
+~~~
+
+**O que faz a função range:**
+
+Permite-nos especificar o início da sequência, o passo, e o valor final.
+
+**Sintaxe**
+
+~~~py
+range(<variável>):
+~~~
+
+**Exemplo**
+
+~~~py
+range(0, 10)
+~~~
+
+**O que faz a função str:**
+
+Converte um dado para string.
+
+**Sintaxe**
+
+~~~py
+str( <variável> ):
+~~~
+
+**Exemplo**
+
+~~~py
+str(height)
+~~~
+
+**O que faz a função take:**
+
+Pegue os primeiros elementos num do RDD.
+
+**Sintaxe**
+
+~~~py
+take( <variável> ):
+~~~
+
+**Exemplo**
+
+~~~py
+dados1 = sc.parallelize(['A', 'B', 'C', 'D', 'E'])
+dados2 = sc.parallelize(['A', 'E', 'I', 'O', 'U'])
+
+result = dados1.intersection(dados2)
+result.take(10)
+~~~
+
+**O que faz a função takeSample:**
+
+Retorne um subconjunto de amostra de tamanho fixo deste RDD.
+
+**Sintaxe**
+
+~~~py
+takeSample( <variável> ):
+~~~
+
+**Exemplo**
+
+~~~py
+rdd = sc.parallelize(range(0, 10))
+len(rdd.takeSample(True, 20, 1))
+~~~
+
+**O que faz a função textFile:**
+
+Leia um arquivo de texto do HDFS, um sistema de arquivos local (disponível em todos os nós) ou qualquer URI de sistema de arquivos compatível com Hadoop e retorne-o como um RDD de Strings. Os arquivos de texto devem ser codificados como UTF-8.
+
+**Sintaxe**
+
+~~~py
+textFile( <variável> ):
+~~~
+
+**Exemplo**
+
+~~~py
+rddANSI = sc.textFile('Biblia-ANSI.txt')
+print(rddANSI.take(1000))
+~~~
+
+**O que faz a função True:**
+
+Retorna o valor 1 se for verdadeira.
+
+**Sintaxe**
+
+~~~py
+True( <variável> ):
+~~~
+
+**Exemplo**
+
+~~~py
+def impar(num):
+    if num % 2 > 0:
+        return True
+    else:
+        return False
+~~~
 
 
+**O que faz a função type:**
 
+Retorna o tipo de um objeto.
 
+**Sintaxe**
 
+~~~py
+type( <variável> ):
+~~~
 
+**Exemplo**
 
-
-
-
-
-
+~~~py
+print(type(tuple_01))
+~~~
 
